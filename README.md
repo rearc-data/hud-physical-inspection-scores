@@ -12,7 +12,7 @@ HUD's Real Estate Assessment Center conducts physical property inspections of pr
 To learn about this data, please visit [the dataset's webpage](https://www.huduser.gov/portal/datasets/pis.html) on HUD USER's website.
 
 #### Data Source
-Depending on the year of release, HUD provides its Physical Inspection Scores datasets files in either XLS or XLSX format. HUD also provides data field guides with each release in either PDF, TXT for DOC format. For this product the included files have been left in their original format.
+The datasets files included with this product are provided in either XLS or XLSX format. HUD also provides data field guides with each release in either PDF, TXT or DOC format. For this product the included files have been left in their original format.
 
 The files inlcuded with this release are delievered with descriptive S3 prefixes with the following pattern:
 
