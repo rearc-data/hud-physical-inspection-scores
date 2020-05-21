@@ -4,7 +4,7 @@
 
 # HUD USER | Public Housing and Multifamily Physical Inspection Scores
 
-You can subscribe to the AWS Data Exchange product utilizing the automation featured in this repository by visiting [](). 
+You can subscribe to the AWS Data Exchange product utilizing the automation featured in this repository by visiting [https://aws.amazon.com/marketplace/pp/prodview-2zypeuukwkoue](https://aws.amazon.com/marketplace/pp/prodview-2zypeuukwkoue). 
 
 ## Main Overview
 HUD's Real Estate Assessment Center conducts physical property inspections of properties that are owned, insured or subsidized by HUD, including public housing and multifamily assisted housing. About 20,000 such inspections are conducted each year to ensure that assisted families have housing that is decent, safe, sanitary and in good repair. The data provided with this resource offers a full historical view of the results of those inspections, providing point-in-time property scores. Separate datasets are available for public housing and for multifamily assisted properties. The dataset includes property identifiers and location information.
