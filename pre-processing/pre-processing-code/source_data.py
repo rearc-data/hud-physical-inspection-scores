@@ -23,13 +23,13 @@ class MyHTMLParser(HTMLParser):
 					cur_class = item[1].lower().strip()
 				if item[0].lower() == 'id':
 					cur_id = item[1].strip()
-			
+
 			if 'tab-pane fade' in cur_class and len(cur_id.split('_')) == 2:
 				self.valid = True
 				self.year = cur_id[0:4]
 				self.type = cur_id[5:]
 
-			
+
 		if tag.lower() == 'a' and self.valid == True:
 			for item in attr:
 				if item[0].lower() == 'href' and '.' in item[1]:
@@ -49,7 +49,7 @@ def data_to_s3(data):
 	# otherwise downloads and uploads to s3
 
 	source_dataset_base = 'https://www.huduser.gov/'
-	
+
 	if data['path'][0] != '/':
 		source_dataset_base = source_dataset_base + '/portal/datasets/'
 
@@ -70,8 +70,8 @@ def data_to_s3(data):
 			f.write(response.read())
 
 		# variables/resources used to upload to s3
-		data_set_name = os.environ['DATA_SET_NAME']
-		s3_bucket = os.environ['S3_BUCKET']
+		data_set_name = os.environ['DATASET_NAME']
+		s3_bucket = os.environ['ASSET_BUCKET']
 		new_s3_key = '{}/dataset/{}/{}/{}'.format(
 			data_set_name, data['year'], data['type'], filename)
 		s3 = boto3.client('s3')
